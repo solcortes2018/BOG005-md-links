@@ -7,7 +7,7 @@ const {readingFile} = require ('./readFileFunction.js')
 const validatePath = (myPath) => {
     // console.log(myPath, 20);
     if (myPath == "" || myPath == undefined) {
-        console.log("error, no es posible leer la ruta que ingresaste")
+        // console.log("error, no es posible leer la ruta que ingresaste")
     }
 
     // Si la ruta es relativa se vuelve absoluta
@@ -23,7 +23,7 @@ const validatePath = (myPath) => {
 
         } else {
             route = myRoute.resolve(myPath);
-            console.log('La ruta que ingresaste era relativa', route); //devuelve la ruta absoluta
+            // console.log('La ruta que ingresaste era relativa', route); //devuelve la ruta absoluta
         }
         // return route;
     };
@@ -34,8 +34,8 @@ const validatePath = (myPath) => {
             arrayMD.push(route);
             // console.log(arrayMD, 25);
         }
-        else
-            console.log("Ingresaste una ruta de diferente formato");
+    //     else
+    //         console.log("Ingresaste una ruta de diferente formato");
     }
     return arrayMD
 }

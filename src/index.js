@@ -8,7 +8,7 @@ const { validateLink } = require('./validateLinks.js');
 const mdLinks = (path, options = { validate: false }) => {
 	return new Promise((resolve, reject) => {
 		const pathValidate = validatePath(path);
-		console.log(pathValidate, 30);
+		// console.log(pathValidate, 30);
 		if (options.validate != true) {
 			readingFile(pathValidate)
 				.then(response => resolve(response))
@@ -24,7 +24,7 @@ const mdLinks = (path, options = { validate: false }) => {
 }
 
 mdLinks(process.argv[2], {validate:true}).then((res) => {
-	console.log(res, 50);
+	// console.log(res, 50);
 })
 
 

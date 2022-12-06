@@ -1,9 +1,9 @@
 const fs = require('fs')
 const marked = require('marked')
 
-const argumentoPrueba = [
-    'C:\\Users\\venta\\BOG005-md-links\\src\\README.md'
-]
+// const argumentoPrueba = [
+//     'C:\\Users\\venta\\BOG005-md-links\\src\\README.md'
+// ]
 
 
 const readingFile = (arrayMDLinks) => {
@@ -43,21 +43,12 @@ const readingFile = (arrayMDLinks) => {
     });
 }
 
-readingFile(argumentoPrueba).then((res) => {
-    console.log(res , 40);
-})
+// readingFile(argumentoPrueba).then((res) => {
+//     console.log(res , 40);
+// })
 
 
 
-// const readFileAll = (arrayMd) => {
-//     const arrayPromises = arrayMd.map((element) => {
-//         return readFile(element)
-
-//     })
-//     return Promise.all(arrayPromises).then((res) => res.flat())
-// }
-
-// readFileAll(argumentoPrueba).then((res) => console.log(res))
 
 
 
